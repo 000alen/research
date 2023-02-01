@@ -11,7 +11,10 @@ DEFAULT_CHUNK_SIZE = 1000
 DEFAULT_SEPARATOR = "\n"
 
 DEFAULT_EMBEDDINGS_MODEL = "sentence-transformers/all-mpnet-base-v2"
-DEFAULT_MODEL = "gpt2"
+# DEFAULT_MODEL = "gpt2"
+# DEFAULT_MODEL = "gpt2-large"
+# DEFAULT_MODEL = "EleutherAI/gpt-neo-1.3B"
+DEFAULT_MODEL = "EleutherAI/gpt-neo-125M"
 
 DEFAULT_K = 2
 DEFAULT_TEMPERATURE = 0.7

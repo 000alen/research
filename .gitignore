@@ -1,6 +1,7 @@
 env/
 *.pdf
 *.pkl
+my_knowledge_dataset/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
