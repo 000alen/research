@@ -16,7 +16,7 @@ retriever = RagRetriever.from_pretrained(
     "facebook/rag-sequence-nq", index_name="custom", indexed_dataset=dataset
 )
 model = RagSequenceForGeneration.from_pretrained(
-    "facebook/rag-token-nq", retriever=retriever
+    "facebook/rag-token-base", retriever=retriever
 )
 tokenizer = RagTokenizer.from_pretrained("facebook/rag-sequence-nq")
 
@@ -25,5 +25,4 @@ input_ids = tokenizer.question_encoder(question, return_tensors="pt")["input_ids
 generated = model.generate(input_ids, max_length=512)
 
 generated_string = tokenizer.batch_decode(generated, skip_special_tokens=True)[0]
-print(generated_string)
-
+print(f"{generated_string=}")
