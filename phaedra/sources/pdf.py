@@ -1,9 +1,9 @@
 import pdfplumber
 
-from phaedra.sources import SourceInterface
+from phaedra.sources import Source
 
 
-class PDF(SourceInterface):
+class PDF(Source):
     @staticmethod
     def extract_text(path: str) -> str:
         with pdfplumber.open(path) as pdf:

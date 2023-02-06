@@ -1,4 +1,5 @@
 env/
+test/
 *.pdf
 *.pkl
 my_knowledge_dataset/
